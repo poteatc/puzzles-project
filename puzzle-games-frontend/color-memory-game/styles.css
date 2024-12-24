@@ -2,7 +2,7 @@
   --board-size: 500px;
 }
 
-#outer {
+#board {
   display: inline-flex;
   flex-wrap: wrap;
   background-color: black;
@@ -12,13 +12,18 @@
   z-index: 0;
 }
 
+button {
+  width: 240px;
+  height: 240px;
+}
+
 #cyan {
   /*   display: grid; */
   background-color: cyan;
   /*   width: var(--board-size) / 2; */
   /*   height: var(--board-size) / 2; */
-  width: 240px;
-  height: 240px;
+  /* width: 240px;
+  height: 240px; */
   margin-left: 5px;
   margin-top: 5px;
   border-radius: 100% 0 100px 0px;
@@ -28,8 +33,8 @@
 #red {
   /*   display: grid; */
   background-color: red;
-  width: 240px;
-  height: 240px;
+  /* width: 240px;
+  height: 240px; */
   margin-left: 10px;
   margin-top: 5px;
   /*   margin-left: var(--board-size) / 4; */
@@ -39,8 +44,8 @@
 
 #green {
   background-color: green;
-  width: 240px;
-  height: 240px;
+  /* width: 240px;
+  height: 240px; */
   margin-top: 5px;
   margin-left: 5px;
   border-radius: 0 100px 0 100%;
@@ -49,8 +54,8 @@
 
 #yellow {
   background-color: yellow;
-  width: 240px;
-  height: 240px;
+  /* width: 240px;
+  height: 240px; */
   margin-left: 10px;
   margin-top: 5px;
   border-radius: 100px 0 100% 0;
