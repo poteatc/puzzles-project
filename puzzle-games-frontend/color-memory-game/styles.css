@@ -1,0 +1,58 @@
+:root {
+  --board-size: 500px;
+}
+
+#outer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: black;
+  width: var(--board-size);
+  height: var(--board-size);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+#cyan {
+  /*   display: grid; */
+  background-color: cyan;
+  /*   width: var(--board-size) / 2; */
+  /*   height: var(--board-size) / 2; */
+  width: 240px;
+  height: 240px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 100% 0 100px 0px;
+  z-index: 1;
+}
+
+#red {
+  /*   display: grid; */
+  background-color: red;
+  width: 240px;
+  height: 240px;
+  margin-left: 10px;
+  margin-top: 5px;
+  /*   margin-left: var(--board-size) / 4; */
+  border-radius: 0 100% 0 100px;
+  z-index: 1;
+}
+
+#green {
+  background-color: green;
+  width: 240px;
+  height: 240px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 0 100px 0 100%;
+  z-index: 1;
+}
+
+#yellow {
+  background-color: yellow;
+  width: 240px;
+  height: 240px;
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 100px 0 100% 0;
+  z-index: 1;
+}
