@@ -1,5 +1,6 @@
 :root {
   --board-size: 500px;
+  --default-opacity: 0.5;
 }
 
 #board {
@@ -17,9 +18,10 @@ button {
   height: 240px;
 }
 
-#cyan {
+.cyan {
   /*   display: grid; */
   background-color: cyan;
+  opacity: 0.75;
   /*   width: var(--board-size) / 2; */
   /*   height: var(--board-size) / 2; */
   /* width: 240px;
@@ -30,9 +32,11 @@ button {
   z-index: 1;
 }
 
-#red {
+.red {
   /*   display: grid; */
   background-color: red;
+  opacity: 0.75;
+
   /* width: 240px;
   height: 240px; */
   margin-left: 10px;
@@ -42,8 +46,10 @@ button {
   z-index: 1;
 }
 
-#green {
+.green {
   background-color: green;
+  opacity: 0.75;
+
   /* width: 240px;
   height: 240px; */
   margin-top: 5px;
@@ -52,12 +58,21 @@ button {
   z-index: 1;
 }
 
-#yellow {
+.yellow {
   background-color: yellow;
+  opacity: 0.75;
+
   /* width: 240px;
   height: 240px; */
   margin-left: 10px;
   margin-top: 5px;
   border-radius: 100px 0 100% 0;
   z-index: 1;
+}
+
+.active {
+  opacity: 100%;
+  filter: drop-shadow(0 0 0.75rem white) brightness(10);
+  -webkit-filter: drop-shadow(0 0 0.75rem white) brightness(10);
+  border: 0.1rem solid white;
 }
