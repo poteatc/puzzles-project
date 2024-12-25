@@ -19,7 +19,7 @@ a {
   flex-direction: row;
   position: absolute;
   top: 15px;
-  justify-content: center;
+  align-items: center;
 }
 
 #game-container {

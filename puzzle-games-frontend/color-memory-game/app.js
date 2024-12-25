@@ -8,7 +8,7 @@ function updateConsecutivePresses() {
   const consecutivePressesDisplay = document.getElementById(
     "consecutive-presses"
   );
-  consecutivePressesDisplay.textContent = `Consecutive presses: ${consecutivePresses}`;
+  consecutivePressesDisplay.textContent = `Score: ${consecutivePresses}`;
 }
 
 // Function to add a new random number to the pattern
