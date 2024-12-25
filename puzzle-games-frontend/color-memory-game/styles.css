@@ -4,18 +4,62 @@
 }
 
 #board {
-  display: inline-flex;
+  /*   display: inline-flex;
   flex-wrap: wrap;
   background-color: black;
   width: var(--board-size);
   height: var(--board-size);
   border-radius: 50%;
+  z-index: 0; */
+  display: flex; /* Change to flex layout for proper alignment */
+  flex-wrap: wrap;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: black;
+  width: var(--board-size);
+  height: var(--board-size);
+  border-radius: 50%;
+  position: relative; /* Ensure the start button is positioned relative to the board */
   z-index: 0;
 }
 
 button {
   width: 240px;
   height: 240px;
+  position: relative;
+}
+
+#start-button {
+  position: absolute; /* Position the start button in the center */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px; /* Set the size of the start button */
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+  z-index: 10; /* Ensure it appears on top of other elements */
+  cursor: pointer;
+  opacity: 0.9;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+#start-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+}
+
+#start-button:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+button:disabled {
+  cursor: not-allowed;
 }
 
 .cyan {
