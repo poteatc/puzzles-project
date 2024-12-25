@@ -5,7 +5,9 @@ const maxTries = 5;
 
 let currentRow = 0;
 
-// fetch("words.txt")
+//const filePath = __dirname + "/words.txt";
+
+// fetch(filePath)
 //   .then((response) => response.text())
 //   .then((data) => {
 //     wordList = data.split("\n").map((word) => word.trim());

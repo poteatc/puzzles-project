@@ -2,11 +2,24 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
   background-color: #f4f4f4;
+}
+
+a {
+  padding: 0 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 15px;
+  justify-content: center;
 }
 
 #game-container {
