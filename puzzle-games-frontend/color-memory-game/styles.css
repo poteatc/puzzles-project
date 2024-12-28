@@ -50,6 +50,7 @@ button {
   width: 240px;
   height: 240px;
   position: relative;
+  cursor: pointer;
 }
 
 #start-button {
