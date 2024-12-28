@@ -10,21 +10,26 @@
 
     <body>
         <header class="header">
-            <a href="../minesweeper/index.html">Minesweeper</a>
-            <a href="../color-memory-game/index.html">Color Memory Game</a>
-            <a href="../wordle/index.html">Wordle</a>
-            <a href="../tic-tac-toe/index.html">Tic-Tac-Toe</a>
+            <a href="../index.html">Home</a>
+            <ul class="navbar">
+                <li><a href="../minesweeper/index.html">Minesweeper</a></li>
+                <li><a href="../color-memory-game/index.html">Color Memory Game</a></li>
+                <li><a href="../wordle/index.html">Wordle</a></li>
+                <li><a href="../tic-tac-toe/index.html">Tic-Tac-Toe</a></li>
+            </ul>
         </header>
-        <!-- Scoreboard displaying consecutive presses -->
-        <div id="scoreboard">
-            <p id="consecutive-presses">Score: 0</p>
-        </div>
-        <div id="board">
-            <button id="0" class="cyan game-button" type="button"></button>
-            <button id="1" class="red game-button" type="button"></button>
-            <button id="2" class="green game-button" type="button"></button>
-            <button id="3" class="yellow game-button" type="button"></button>
-            <button id="start-button" class="start" type="button">Start</button>
+        <div class="game">
+            <!-- Scoreboard displaying consecutive presses -->
+            <div id="scoreboard">
+                <p id="consecutive-presses">Score: 0</p>
+            </div>
+            <div id="board">
+                <button id="0" class="cyan game-button" type="button"></button>
+                <button id="1" class="red game-button" type="button"></button>
+                <button id="2" class="green game-button" type="button"></button>
+                <button id="3" class="yellow game-button" type="button"></button>
+                <button id="start-button" class="start" type="button">Start</button>
+            </div>
         </div>
         <script src="./app.js" async defer></script>
     </body>

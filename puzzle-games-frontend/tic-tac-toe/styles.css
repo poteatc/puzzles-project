@@ -9,6 +9,37 @@ body {
   background-color: #f4f4f4;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+ul.navbar {
+  list-style-type: none;
+}
+
+ul.navbar li {
+  display: list-item;
+  /* float: left; */
+}
+
+li.right {
+  float: right;
+}
+
 a {
   padding: 0 10px;
 }
@@ -22,7 +53,7 @@ a {
 }
 
 #grid {
-  margin-top: 50px;
+  margin-top: 150px;
   justify-content: center;
   align-items: center;
   display: grid;
